@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #1b191f;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
@@ -12,7 +12,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #abacae;
+  color: #c6c9cf;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3, h4 {
   font-size: 38px;
-  color: #222222;
+  color: #949699;
   font-weight: 700;
   font-family: 'Arvo', serif;
 }
@@ -74,7 +74,14 @@ a:not([href]):not([tabindex]) {
 
 .section-title {
   font-size: 30px;
-  color: #222222;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+}
+.section-title-dark {
+  font-size: 30px;
+  color: #ffffff;
   display: inline-block;
   font-weight: 700;
   position: relative;
@@ -107,7 +114,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .bg-gray {
-  background: #f9f9f9;
+  background: #2e2e2e;
 }
 
 .overlay {
@@ -148,7 +155,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common:hover {
-  color: #1c1c1c;
+  color: #949699;
   background: transparent;
   border: 1px dotted #1c1c1c;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
@@ -341,7 +348,7 @@ hr {
   8. Features Section Style
    ========================================================================== */
 #features {
-  background: #fff;
+  background: #1b191f;
 }
 
 #features .icon {
@@ -372,7 +379,7 @@ hr {
   line-height: 22px;
   margin-top: 30px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #1b191f;
   -webkit-transition: all .3s ease-in-out;
   -mox-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -390,7 +397,7 @@ hr {
 }
 
 #features .box-item .icon i {
-  color: #505050;
+  color: #FFF;
   font-size: 30px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -419,7 +426,7 @@ hr {
 }
 
 #features .box-item:hover h4 {
-  color: #505050;
+  color: #FFF;
 }
 
 #features .show-box {
@@ -432,7 +439,7 @@ hr {
 
 /* Services Item */
 .services-item {
-  padding: 20px;
+  padding: 15px;
   border-radius: 4px;
   text-align: center;
   margin: 15px 0;
@@ -448,7 +455,7 @@ hr {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 5px auto;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -474,7 +481,7 @@ hr {
 
 .services-item .services-content h3 a {
   font-size: 16px;
-  color: #585b60;
+  color: #cfcaca;
 }
 
 .services-item .services-content h3 a:hover {
@@ -530,12 +537,12 @@ hr {
 }
 
 .top-nav-collapse {
-  background: #fff;
+  background: #1a1a1c;
   z-index: 999999;
   padding: 5px !important;
   top: 0px !important;
   box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-  background: #fff !important;
+  background: #1a1a1c !important;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
@@ -565,7 +572,7 @@ hr {
 }
 
 .navbar-expand-md .navbar-toggler {
-  background: transparent;
+  background: #1a1a1c;
   border: 1px solid #505050;
   color: #505050;
   border-radius: 4px;
@@ -634,7 +641,7 @@ hr {
 .navbar-expand-md .navbar-nav li a:hover,
 .navbar-expand-md .navbar-nav li .active > a,
 .navbar-expand-md .navbar-nav li a:focus {
-  color: #fff;
+  color: #0a0a0a;
   outline: none;
 }
 
@@ -649,7 +656,7 @@ hr {
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link:hover::before,
 .navbar-expand-md .navbar-nav .nav-link:focus {
-  color: #000000;
+  color: #0a0a0a;
   width: 100%;
   transition: width 1s;
   -webkit-transition: width 1s;
@@ -773,7 +780,7 @@ hr {
 }
 
 #hero-area .contents .head-title {
-  color: #222222;
+  color: #FFF;
   font-size: 42px;
   font-weight: 700;
   line-height: 60px;
@@ -806,7 +813,7 @@ hr {
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
-  background: #fff;
+  background: #1b191f;
 }
 
 .team-item .team-img {
@@ -871,7 +878,7 @@ hr {
 }
 
 .team-item .info-text h3 a {
-  color: #333;
+  color: #949699;
 }
 
 .team-item .info-text h3 a:hover {
@@ -900,7 +907,7 @@ hr {
 
 #pricing .title h3 {
   text-transform: uppercase;
-  color: #333;
+  color: #FFF;
   font-size: 18px;
 }
 
@@ -1008,7 +1015,7 @@ hr {
 }
 
 #pricing .table:hover {
-  background: #ffffff;
+  background: #1b191f;
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
@@ -1046,7 +1053,7 @@ hr {
 
 .testimonial {
   position: relative;
-  background-color: #505050;
+  background-color: #2e2e2e;
 }
 
 .testimonial-item {
@@ -1289,7 +1296,7 @@ textarea {
 }
 
 .contact-right .contact-icon {
-  background: #505050;
+  background: #69696b;
   color: #fff;
   border-radius: 4px;
   font-size: 20px;
@@ -1317,24 +1324,24 @@ textarea {
 .footer-area {
   position: relative;
   padding: 150px 0px 0px;
-  background: #fff;
+  background: #1b191f;
 }
 
 .footer-area .footer-titel {
   font-size: 18px;
-  color: #333333;
+  color: #d7d7d7;
   font-weight: 500;
   padding-bottom: 20px;
   letter-spacing: 0.5px;
 }
 
 .footer-area .footer-titel span {
-  color: #ccc;
+  color: #cccccc;
   font-weight: 400;
 }
 
 .footer-area .textwidget p {
-  color: #333;
+  color: #cccccc;
 }
 
 .footer-area .footer-link li {
@@ -1342,14 +1349,14 @@ textarea {
 }
 
 .footer-area .footer-link li a {
-  color: #333;
+  color: #cccccc;
   font-size: 14px;
   font-weight: 400;
   position: relative;
 }
 
 .footer-area .footer-link li a:hover {
-  color: #505050;
+  color: #cccccc;
 }
 
 .footer-area .address li {
@@ -1357,7 +1364,7 @@ textarea {
 }
 
 .footer-area .address li a {
-  color: #666666;
+  color: #cccccc;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -1395,20 +1402,20 @@ textarea {
 }
 
 #copyright .copyright-content {
-  border-top: 1px solid #d5d4e9;
+  border-top: 1px solid #cccccc;
   padding: 15px 0;
   margin: 45px 0 0px;
 }
 
 #copyright p {
   line-height: 42px;
-  color: #333;
+  color: #cccccc;
   text-align: center;
   margin: 0;
 }
 
 #copyright p a {
-  color: #505050;
+  color: #cccccc;
 }
 
 .social-icon a {
@@ -1465,13 +1472,13 @@ textarea {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: #1b191f; /* Fallback color */
+  background-color: #1b191f; /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #1c1c1c;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -1498,7 +1505,7 @@ button > * {
 }
 
 .modal-button:hover {
-	color: #fff;
+	color: #505050;
 	text-transform: uppercase;
 }
 
