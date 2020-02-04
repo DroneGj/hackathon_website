@@ -155,7 +155,11 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common:hover {
-  color: #e4e4e4;
+  font-size: 14px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+	color: #000000;
   background: #e4e4e4;
   border: 1px dotted #e4e4e4;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
@@ -1026,9 +1030,6 @@ hr {
 .icon-box-spon:hover {
   background: #505050;
 }
-.icon-box-spon:hover img{
-  visibility: hidden;
-}
 
 #pricing .table:hover .icon-box i {
   color: #fff;
@@ -1518,14 +1519,10 @@ button > * {
 
 
 
-.spon1:hover {
-	background-image: url("../fonts/intelW.svg");
+.spon-img:hover {
+	filter: invert(100%);
 }
-.spon2:hover {
-	background-image: url("../fonts/senseW.svg");
-}
-.spon3:hover {
-	background-image: url("../fonts/microsoftW.svg");
+
 }
 .videoWrapper {
 	position: relative;
@@ -1541,17 +1538,18 @@ button > * {
 	height: 100%;
 }
 
-.btn-txt {
-	color: #F0F0F0;
-}
-
-.btn-txt:hover {
-	color: #000000;
-	font-weight: 550;
-}
-
 .domains {
 	width: 100%; 
 	border: none; 
 	background: transparent;
+}
+
+.btn-play {
+	color: #FFFFFF;
+	border: none; 
+	background: transparent; 
+	cursor: pointer;
+}
+.btn-play:hover {
+	color: #000000;
 }
