@@ -155,9 +155,9 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common:hover {
-  color: #949699;
-  background: transparent;
-  border: 1px dotted #1c1c1c;
+  color: #e4e4e4;
+  background: #e4e4e4;
+  border: 1px dotted #e4e4e4;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -464,7 +464,7 @@ hr {
 
 .services-item .icon i {
   font-size: 30px;
-  color: #505050;
+  color: #E4E4E4;
   line-height: 70px;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -1487,17 +1487,19 @@ textarea {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #C0C0C0;
   float: right;
   font-size: 28px;
   font-weight: bold;
+	text-shadow: none;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #E0E0E0;
   text-decoration: none;
   cursor: pointer;
+	text-shadow: none;
 }
 
 button > * {
@@ -1537,4 +1539,19 @@ button > * {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.btn-txt {
+	color: #F0F0F0;
+}
+
+.btn-txt:hover {
+	color: #000000;
+	font-weight: 550;
+}
+
+.domains {
+	width: 100%; 
+	border: none; 
+	background: transparent;
 }
