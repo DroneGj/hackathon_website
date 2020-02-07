@@ -811,13 +811,11 @@ hr {
 }
 .icon-box-spon {
   position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 150px;
+  height: 120px;
   display: inline-block;
   vertical-align: middle;
-  background-color: #EBEDEF;
-  margin-bottom: 20px;
+  background-color: transparent;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   -ms-transition: all .3s linear;
@@ -876,7 +874,7 @@ hr {
   background: #505050;
 }
 .icon-box-spon:hover {
-  background: #505050;
+  background: transparent;
 }
 #pricing .table:hover .icon-box i {
   color: #fff;
@@ -1279,8 +1277,13 @@ button > * {
   color: #505050;
   text-transform: uppercase;
 }
+.spon-img{
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
 .spon-img:hover {
-  filter: invert(100%);
+  filter: none;
+    -webkit-filter: grayscale(0%);
 }
 .videoWrapper {
   position: relative;
