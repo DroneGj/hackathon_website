@@ -279,7 +279,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 #loader-1:after {
   border: 7px solid #f2f2f2;
-  margin: 1px;
+  margin: 2px;
   width: 99%;
   height: 99%;
 }

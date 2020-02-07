@@ -83,7 +83,7 @@
               <div id="myModalV" class="modal" style="padding: 60px 60px 0px 60px; "> 
                 <!-- Modal content -->
                 <div class="modal-content" style="">
-                  <div class="videoWrapper" id="yt-player">
+                  <div class="videoWrapper">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V4Hwi3o2X0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <!--
@@ -388,28 +388,28 @@
         <div class="content-left">
           <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text">
-              <h4 class="col-lg-12 text-center">Main Prizes</h4>
+              <h4 class="col-lg-12 text-center" style="color: #ECECEC; padding-top: 8px;">Main Prizes</h4>
             </div>
           </div>
-          <div class="box-item wow fadeInLeft" data-wow-delay="0.3s"> <span class="icon"> <strong><img src="assets/img/prizes/first.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9">First Position</h4>
-              <h5 class="col-lg-9">INR 15000</h5>
-              <p class="col-lg-9">Best Team with best innovation will win this prize. </p>
+          <div class="box-item wow fadeInLeft" data-wow-delay="0.3s"><span class="icon"> <strong><img src="assets/img/prizes/first.svg" alt="" /></strong> </span>
+            <div class="text col-lg-9 col-9">
+              <h4>First Position</h4>
+              <h5>INR 15000</h5>
+              <p>Best Team with best innovation will win this prize. </p>
             </div>
           </div>
           <div class="box-item wow fadeInLeft" data-wow-delay="0.6s"> <span class="icon"> <strong><img src="assets/img/prizes/second.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9">Second Position</h4>
-              <h5 class="col-lg-9">INR 10000</h5>
-              <p class="col-lg-9">Not the first but Silver is also as good as Gold.</p>
+            <div class="text col-lg-9 col-9">
+              <h4>Second Position</h4>
+              <h5>INR 10000</h5>
+              <p>Not the first but Silver is also as good as Gold.</p>
             </div>
           </div>
           <div class="box-item wow fadeInLeft" data-wow-delay="0.9s"> <span class="icon"> <strong><img src="assets/img/prizes/third.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9">Third Position</h4>
-              <h5 class="col-lg-9">INR 5000</h5>
-              <p class="col-lg-9">Every prize has its own worth. Bronze is very pure to begin with and getting it is a
+            <div class="text col-lg-9 col-9">
+              <h4>Third Position</h4>
+              <h5>INR 5000</h5>
+              <p>Every prize has its own worth. Bronze is very pure to begin with and getting it is a
                 big deal.</p>
             </div>
           </div>
@@ -422,25 +422,25 @@
         <div class="content-right">
           <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
             <div class="text">
-              <h4 class="text-center">Special Prices</h4>
+              <h4 class="text-center" style="color: #ECECEC; padding-top: 8px;">Special Prices</h4>
             </div>
           </div>
           <div class="box-item wow fadeInRight" data-wow-delay="0.3s"> <span class="icon"> <strong><img src="assets/img/prizes/girls.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9 offset-lg-3">Best Girls Team</h4>
-              <p class="col-lg-9 offset-lg-3">The technology have no gender and reboot empower young girl programmers. </p>
+            <div class="text col-lg-9 offset-lg-3 col-9 offset-3">
+              <h4>Best Girls Team</h4>
+              <p>The technology have no gender and reboot empower young girl programmers. </p>
             </div>
           </div>
           <div class="box-item wow fadeInRight" data-wow-delay="0.6s"> <span class="icon"> <strong><img src="assets/img/prizes/top10.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9 offset-lg-3">Top 10 Teams (50)</h4>
-              <p class="col-lg-9 offset-lg-3">Wolfram has something special for you.</p>
+            <div class="text col-lg-9 offset-lg-3 col-9 offset-3">
+              <h4>Top 10 Teams (50)</h4>
+              <p>Wolfram has something special for you. Top 10 teams will get surprize gits.</p>
             </div>
           </div>
           <div class="box-item wow fadeInRight" data-wow-delay="0.9s"> <span class="icon"> <strong><img src="assets/img/prizes/pitch.svg" alt="" /></strong> </span>
-            <div class="text">
-              <h4 class="col-lg-9 offset-lg-3">Pitch of the Day</h4>
-              <p class="offset-lg-3 col-lg-9">Hack is not always about code. There are more elements to it. So this
+            <div class="text col-lg-9 offset-lg-3 col-9 offset-3">
+              <h4 >Pitch of the Day</h4>
+              <p>Hack is not always about code. There are more elements to it. So this
                 Reboot showcase your presentation skills and win something from Coding Blocks.</p>
             </div>
           </div>
@@ -780,50 +780,52 @@
       <div class="col-lg-7 col-md-12 col-sm-12">
         <div class="contact-block">
           <form id="contactForm">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>
+          <div class="row">
+          <form id="contact_us_form" method="post" action="assets/php/form-process.php">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                <div class="help-block with-errors"></div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" id="email" class="form-control" name="email" required ata-error="Please enter your email">
-                  <div class="help-block with-errors"></div>
-                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Email" id="email" class="form-control" name="email" required ata-error="Please enter your email">
+                <div class="help-block with-errors"></div>
               </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                  <div class="help-block with-errors"></div>
-                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                <div class="help-block with-errors"></div>
               </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Your Message" rows="7" data-error="Write your message" required></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="submit-button text-left">
-                  <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
-                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Your Message" rows="7" data-error="Write your message" required></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="submit-button text-left">
+                <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
               </div>
             </div>
           </form>
         </div>
-      </div>
-      <div class="col-lg-5 col-md-12 col-xs-12">
-        <div class="map"> <img src="assets/img/RAS_logo.svg" height="100%" width="100%" alt="">
-          <div class="textwidget">
-            <p>IEEE-RAS (ROBOTICS &amp; AUTOMATION SOCIETY) is a VIT student chapter by IEEE to enhance the
-              knowledge of students in the field of Robotics &amp; Automation.</p>
-          </div>
-          <div class="social-icon"> <a class="facebook" href="https://www.facebook.com/IEEERASVIT/" target="_blank"> <i class="lni-facebook-filled"></i></a> <a class="twitter" href="https://twitter.com/ieeeras" target="_blank"> <i class="lni-twitter-filled"></i></a> <a class="instagram" href="https://www.instagram.com/ieeerasvit" target="_blank"> <i class="lni-instagram-filled"></i></a> <a class="linkedin" href="https://www.linkedin.com/company/ieee-ras" target="_blank"> <i class="lni-linkedin-filled"></i></a> </div>
-        </div>
+        </form>
       </div>
     </div>
+    <div class="col-lg-5 col-md-12 col-xs-12">
+      <div class="map"> <img src="assets/img/RAS_logo.svg" height="100%" width="100%" alt="">
+        <div class="textwidget">
+          <p>IEEE-RAS (ROBOTICS &amp; AUTOMATION SOCIETY) is a VIT student chapter by IEEE to enhance the
+            knowledge of students in the field of Robotics &amp; Automation.</p>
+        </div>
+        <div class="social-icon"> <a class="facebook" href="https://www.facebook.com/IEEERASVIT/" target="_blank"> <i class="lni-facebook-filled"></i></a> <a class="twitter" href="https://twitter.com/ieeeras" target="_blank"> <i class="lni-twitter-filled"></i></a> <a class="instagram" href="https://www.instagram.com/ieeerasvit" target="_blank"> <i class="lni-instagram-filled"></i></a> <a class="linkedin" href="https://www.linkedin.com/company/ieee-ras" target="_blank"> <i class="lni-linkedin-filled"></i></a> </div>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 <!-- Contact Section End --> 
@@ -976,6 +978,5 @@
         });
     });
 </script>
-    
 </body>
 </html>
