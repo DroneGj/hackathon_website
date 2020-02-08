@@ -50,8 +50,10 @@ $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
+$headers = 'From: noreply@company.com';
+
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:<.$email>");
+$success = mail($EmailTo, $Subject, $Body, $headers);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
