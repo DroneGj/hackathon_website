@@ -1312,3 +1312,16 @@ button > * {
 .btn-play:hover {
   color: #000000;
 }
+.spon-img-inv {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+
+}
+.spon-img-inv:hover {
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+.timer p{
+    color: #ffffff;
+}
