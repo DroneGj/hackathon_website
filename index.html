@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <!-- Responsive Style -->
 <link rel="stylesheet" href="assets/css/responsive.css">
+<!--Timer Style-->
+<link rel="stylesheet" href="assets/css/style-timer.css">
 </head>
 
 <body>
@@ -94,8 +96,13 @@
               </div>
             </div>
             <div class="header-button timer">
-                <p class="col-lg-5" style="font-size: 14px; padding: 10px 0px">Registration is Live&nbsp;&nbsp;<i class="lni-timer"></i></p>
-              <p class="col-lg-6" id="timer" style="font-size: 22px; padding-left: 0px;"></p>
+              <p class="col-lg-5" style="font-size: 14px; padding: 10px 0px">Registration is Live&nbsp;&nbsp;<i class="lni-timer"></i></p>
+                  <div id="myFlipper" class="flipper col-lg-8 col-md-8 col-sm-9 col-10"
+                     data-reverse="true"
+                     data-datetime="2020-02-15 00:00:00" 
+                     data-template="dd|HH|ii|ss" 
+                     data-labels="Days|Hours|Minutes|Seconds">
+                </div>
             </div>
           </div>
         </div>
@@ -420,7 +427,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 my-auto">
-        <div class="show-box wow fadeInUp" data-wow-delay="0.3s"> <img class="spon-img" style="padding-top: 30px;" src="assets/img/feature/prizesC.svg" alt=""> </div>
+        <div class="show-box wow fadeInUp" data-wow-delay="0.3s"> <img class="spon-img" src="assets/img/feature/prizesC.svg" alt=""> </div>
       </div>
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
         <div class="content-right">
@@ -894,6 +901,7 @@
 <script src="assets/js/main.js"></script> 
 <script src="assets/js/form-validator.min.js"></script> 
 <script src="assets/js/contact-form-script.min.js"></script> 
+<script src="assets/js/jquery.flipper-responsive.js"></script> 
 <script>
     function myFunction() {
       var dots = document.getElementById("dots");
@@ -955,36 +963,11 @@
             $('iframe').attr('src', $('iframe').attr('src'));
         });
     });
-</script>
-    <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 29, 2020 11:59:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+</script> 
+<script>
+  jQuery(function($){
+    $('#myFlipper').flipper('init');
+  });
 </script>
 </body>
 </html>
